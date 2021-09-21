@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+</head>
+<body>
+    <ul type="square">
+        <li>this is my first itme of my unordered list</li>
+        <li>this is my second itme of my unordered list</li>
+        <li>this is my third itme of my unordered list</li>
+    </ul>
+    <ol type="a">
+         <li>this is my first itme of my ordered list</li>
+         <li>this is my second itme of my ordered list</li>
+         <li>this is my third itme of my ordered list</li>
+
+    </ol>
+   <!-- Tables --> 
+   <h3>HTML Table</h3>
+   <table border="1">
+       <thead>
+           <tr>
+               <th>Name</th>
+               <th>Employee Id</th>
+               <th>Employee Role</th>
+            </tr>
+            </thead>
+            <tbody id='GM'>
+              <!--   
+                <tr>
+                    <td>abc</td>
+                    <td>34343</td>
+                    <td>programmer</td>
+                </tr>
+                <tr>
+                    <td>xyz</td>
+                    <td>3483</td>
+                    <td>HTML expert</td 
+                    </tr> -->
+             </tbody>
+   </table>
+</body>
+<script>
+    let Data = [{"id":1,"name":"Allissa","role":"Supervisor"},
+{"id":2,"name":"Doris","role":"Subcontractor"},
+{"id":3,"name":"Rivy","role":"Construction Expeditor"},
+{"id":4,"name":"Petr","role":"Subcontractor"},
+{"id":5,"name":"Carlos","role":"Supervisor"},
+{"id":6,"name":"Mick","role":"Project Manager"},
+{"id":7,"name":"Dionysus","role":"Engineer"},
+{"id":8,"name":"Ramsey","role":"Engineer"},
+{"id":9,"name":"Jere","role":"Project Manager"},
+{"id":10,"name":"Celesta","role":"Electrician"},
+{"id":11,"name":"Annora","role":"Supervisor"},
+{"id":12,"name":"Eustace","role":"Electrician"},
+{"id":13,"name":"Zola","role":"Architect"},
+{"id":14,"name":"Lance","role":"Project Manager"},
+{"id":15,"name":"Melissa","role":"Construction Foreman"},
+{"id":16,"name":"Theodoric","role":"Project Manager"},
+{"id":17,"name":"Gar","role":"Architect"},
+{"id":18,"name":"Hanny","role":"Engineer"},
+{"id":19,"name":"Antonietta","role":"Supervisor"},
+{"id":20,"name":"Cathrine","role":"Estimator"},
+{"id":21,"name":"Bobbye","role":"Construction Expeditor"},
+{"id":22,"name":"Michaella","role":"Construction Expeditor"},
+{"id":23,"name":"Clarabelle","role":"Construction Manager"},
+{"id":24,"name":"Malinda","role":"Project Manager"},
+{"id":25,"name":"Mercy","role":"Surveyor"},
+{"id":26,"name":"Dorie","role":"Subcontractor"},
+{"id":27,"name":"Patty","role":"Architect"},
+{"id":28,"name":"Sonya","role":"Project Manager"},
+{"id":29,"name":"Kristos","role":"Estimator"},
+{"id":30,"name":"Kareem","role":"Electrician"},
+{"id":31,"name":"Moore","role":"Supervisor"},
+{"id":32,"name":"Milissent","role":"Engineer"},
+{"id":33,"name":"Vivienne","role":"Construction Expeditor"},
+{"id":34,"name":"Frederic","role":"Engineer"},
+{"id":35,"name":"Chanda","role":"Estimator"},
+{"id":36,"name":"Thebault","role":"Construction Manager"},
+{"id":37,"name":"Arlyn","role":"Construction Manager"},
+{"id":38,"name":"Ericha","role":"Construction Manager"},
+{"id":39,"name":"Nicky","role":"Construction Expeditor"},
+{"id":40,"name":"Ari","role":"Subcontractor"},
+{"id":41,"name":"Philomena","role":"Supervisor"},
+{"id":42,"name":"Sarah","role":"Construction Manager"},
+{"id":43,"name":"Eleanor","role":"Architect"},
+{"id":44,"name":"Carline","role":"Architect"},
+{"id":45,"name":"Felicle","role":"Construction Foreman"},
+{"id":46,"name":"Ellerey","role":"Electrician"},
+{"id":47,"name":"Cassey","role":"Construction Worker"},
+{"id":48,"name":"Norrie","role":"Supervisor"},
+{"id":49,"name":"Luise","role":"Construction Manager"},
+{"id":50,"name":"Jenifer","role":"Estimator"},
+{"id":51,"name":"Alberta","role":"Surveyor"},
+{"id":52,"name":"Graham","role":"Electrician"},
+{"id":53,"name":"Bessie","role":"Construction Manager"},
+{"id":54,"name":"Daria","role":"Supervisor"},
+{"id":55,"name":"Dee","role":"Estimator"},
+{"id":56,"name":"Greg","role":"Engineer"},
+{"id":57,"name":"Chester","role":"Engineer"},
+{"id":58,"name":"Jobye","role":"Estimator"},
+{"id":59,"name":"Celie","role":"Project Manager"},
+{"id":60,"name":"Blakeley","role":"Construction Worker"},
+{"id":61,"name":"Tod","role":"Estimator"},
+{"id":62,"name":"Zacharia","role":"Estimator"},
+{"id":63,"name":"Consuelo","role":"Supervisor"},
+{"id":64,"name":"Bill","role":"Subcontractor"},
+{"id":65,"name":"Griffie","role":"Estimator"},
+{"id":66,"name":"Felicdad","role":"Supervisor"},
+{"id":67,"name":"Beck","role":"Subcontractor"},
+{"id":68,"name":"Raviv","role":"Architect"},
+{"id":69,"name":"Tracey","role":"Surveyor"},
+{"id":70,"name":"Jesus","role":"Subcontractor"},
+{"id":71,"name":"Silvain","role":"Surveyor"},
+{"id":72,"name":"Saxe","role":"Construction Worker"},
+{"id":73,"name":"Sandye","role":"Subcontractor"},
+{"id":74,"name":"Dolly","role":"Engineer"},
+{"id":75,"name":"Holly","role":"Construction Manager"},
+{"id":76,"name":"Addie","role":"Construction Expeditor"},
+{"id":77,"name":"Will","role":"Project Manager"},
+{"id":78,"name":"Randi","role":"Estimator"},
+{"id":79,"name":"Charlot","role":"Construction Expeditor"},
+{"id":80,"name":"Maryl","role":"Construction Expeditor"},
+{"id":81,"name":"Whitman","role":"Construction Worker"},
+{"id":82,"name":"Jo ann","role":"Construction Foreman"},
+{"id":83,"name":"Wolfie","role":"Supervisor"},
+{"id":84,"name":"Nicola","role":"Engineer"},
+{"id":85,"name":"Ajay","role":"Engineer"},
+{"id":86,"name":"Marci","role":"Project Manager"},
+{"id":87,"name":"Gianina","role":"Supervisor"},
+{"id":88,"name":"Mil","role":"Construction Expeditor"},
+{"id":89,"name":"Milt","role":"Construction Worker"},
+{"id":90,"name":"Juliette","role":"Engineer"},
+{"id":91,"name":"Josselyn","role":"Construction Foreman"},
+{"id":92,"name":"Elane","role":"Construction Expeditor"},
+{"id":93,"name":"Dionis","role":"Surveyor"},
+{"id":94,"name":"Hallsy","role":"Electrician"},
+{"id":95,"name":"Hastie","role":"Construction Expeditor"},
+{"id":96,"name":"Camila","role":"Construction Manager"},
+{"id":97,"name":"Walker","role":"Subcontractor"},
+{"id":98,"name":"Everard","role":"Construction Expeditor"},
+{"id":99,"name":"Wylie","role":"Electrician"},
+{"id":100,"name":"Mikaela","role":"Electrician"}]
+    let rowData =""
+    Data.forEach((data)=>{
+        rowData = rowData + `<tr> <td>${data.name}</td>
+                                  <td>${data.id}</td>
+                                  <td>${data.role}</td>
+                            </tr>`
+    })
+
+    let tbody = document.getElementById('GM')
+    tbody.innerHTML =rowData;
+</script>
+</html>

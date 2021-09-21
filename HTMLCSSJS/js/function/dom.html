@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<!-- <style>
+    .container li{
+list-style: none;
+    }
+</style> -->
+<body>
+    <div id="main" class="container">
+          
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>more about us</li>
+            <li>contact us</li>
+        </ul>
+            </div>
+            <script>
+             
+                let main = document.getElementById('main');
+                console.log(main);
+                let nav = document.getElementById('nav');
+                console.log(nav);
+                let container = document.getElementsByClassName('container');
+                console.log(container);
+                let sel = document.querySelector('.container');
+                console.log("selector returns");
+            </script>
+</body>
+</html>
